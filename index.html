@@ -1,12 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Disney</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+    <nav>
+        <img class="imageLogo" src="images/Disney_wordmark.svg.png" alt="disneyLogo">
+        <div class="navRight">
+            <a href="#">SHOP</a>
+            <a href="#">FILMS</a>
+            <a href="#">PARKEN</a>
+            <a href="#">DISNEY100</a>
+            <a class="disneyPlus" href="#disneyPlus">DISNEY+</a>
+        </div>
+    </nav>
+    <header>
+        <section class="insideHeader">
+            <div>
+                <h1>
+                    Welkom bij Disney
+                </h1>
+                <p>
+                    Disney, officieel bekend als The Walt Disney Company, is een wereldwijd toonaangevend
+                    entertainmentbedrijf dat wereldwijd geliefd is om zijn betoverende verhalen, iconische personages en
+                    onvergetelijke ervaringen. Sinds de oprichting door Walt Disney en Roy O. Disney in 1923, heeft
+                    Disney
+                    een diepgaande impact gehad op de wereld van entertainment en de populaire cultuur.
+                </p>
+            </div>
+            <div>
+                <a href="#">ABONNEER NU</a>
+                <a class="new" href="#">NIEUW</a>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="subHeading" id="disneyPlus">
+            <h2>
+                Nieuw op Disney+
+            </h2>
+            <div class="articleRow">
+                <article>
+                    <img src="images/theLittleMermaid.jpeg" alt="the little mermaid">
+                    <div class="insideArticle">
+                        <h3>
+                            The Little Mermaid
+                        </h3>
+                        <p class="stars">
+                            ★★★★
+                        </p>
+                        <p>
+                            "The Little Mermaid" is een klassieke Disney-animatiefilm die het verhaal volgt van
+                            Ariel,
+                            een nieuwsgierige
+                            zeemeerminprinses die verlangt naar een leven aan land.
+                        </p>
+                        <a href="#">BEZOEK NU</a>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/elemental.jpg" alt="">
+                    <div class="insideArticle">
+                        <h3>
+                            Elemental
+                        </h3>
+                        <p class="stars">
+                            ★★★★
+                        </p>
+                        <p>
+                            “Elemental” speelt zich af in Elementenstad, waar vuur-, water-, land- en luchtbewoners
+                            samenleven. Als Ember, een
+                            pittige en pientere jonge vrouw, vriendschap sluit met Wade, een geestige en
+                            gemoedelijke
+                            gast
+                        </p>
+                        <a href="#">BEZOEK NU</a>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/hautedMansion.jpg" alt="hautedmansion">
+                    <div class="insideArticle">
+                        <h3>
+                            Haunted Mansion
+                        </h3>
+                        <p class="stars">
+                            ★★★
+                        </p>
+                        <p>
+                            “Haunted Mansion” gaat over een vrouw met haar zoon die een bont gezelschap van
+                            zogenaamde
+                            spirituele experts inschakelen om
+                            hun huis te ontdoen van bovennatuurlijke krakers.
+                        </p>
+                        <a href="#">BEZOEK NU</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="form">
+            <h4>
+                Form
+            </h4>
+            <form action="index.html">
+                <section class="wholeForm">
+                    <div class="topForm">
+                        <div class="formRow">
+                            <label for="firstname">Voornaam</label>
+                            <input type="text" name="firstname" id="firstname" placeholder="Voornaam">
+                        </div>
+                        <div class="formRow">
+                            <label for="lastname">Achternaam</label>
+                            <input type="text" name="lastname" id="lastname" placeholder="Achternaam">
+                        </div>
+                    </div>
+                    <div class="formRow">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="topForm">
+                        <div class="formRow">
+                            <label for="place">Woonplaats</label>
+                            <input type="text" name="place" id="place" placeholder="Woonplaats">
+                        </div>
+                        <div class="formRow">
+                            <label for="birthdate">Geboortedatum</label>
+                            <input type="date" name="birthdate" id="birthdate">
+                        </div>
+                    </div>
+                    <div class="formRow">
+                        <label for="onderwerp">Onderwerp</label>
+                        <select id="onderwerp" name="onderwerp">
+                            <option value="" disabled selected>Kies onderwerp van het bericht... </option>
+                            <option value="disney">Disney+</option>
+                            <option value="disneyland">Disneyland Paris</option>
+                            <option value="parkenResorts">Parken en Resorts</option>
+                            <option value="vraag">Andere vragen</option>
+                        </select>
+                    </div>
+                    <div class="formRow">
+                        <label for="question">Bericht</label>
+                        <input type="textarea" name="question" id="question">
+                    </div>
+                    <div>
+                        <label for="inschrijven">Inschrijven voor nieuwsbrief?</label>
+                        <div class="yesNo">
+                            <div>
+                                <input type="radio" id="ja" name="inschrijven" value="ja">
+                                <label for="ja">Ja</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="nee" name="inschrijven" value="nee">
+                                <label for="nee">Nee</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="check">
+                        <input type="checkbox" id="check" name="check" value="Check">
+                        <label for="check">Ik ga akkoord met de algemene voorwaarden</label>
+                    </div>
+                    <button type="submit">Verstuur</button>
+                </section>
+            </form>
+        </section>
+        <footer>
+            <img class="imageLogo" src="images/Disney_wordmark.svg.png" alt="disneyLogo">
+            <div class="bottomFooter">
+                <div>
+                    <p>
+                        Copyright 2023 Disney
+                    </p>
+                    <p>
+                        <a href="#">
+                            <img src="images/snapchat.jpg" alt="instagram logo">
+                        </a>
+                    </p>
+                </div>
+                <div class="rightFooter">
+                    <p>
+                        Privacyverklaring
+                    </p>
+                    <p>
+                        Algemene voorwaarden
+                    </p>
+                    <p>
+                        Cookiebeleid
+                    </p>
+                    <p>
+                        Contact
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </main>
 </body>
+
 </html>
