@@ -34,7 +34,7 @@
                 </p>
             </div>
             <div>
-                <a href="#">ABONNEER NU</a>
+                <a href="https://www.disneyplus.com/nl-nl/home">ABONNEER NU</a>
                 <a class="new" href="#">NIEUW</a>
             </div>
         </section>
@@ -55,16 +55,16 @@
                             ★★★★
                         </p>
                         <p>
-                            "The Little Mermaid" is een klassieke Disney-animatiefilm die het verhaal volgt van
+                            <cite>"The Little Mermaid"</cite> is een klassieke Disney-animatiefilm die het verhaal volgt van
                             Ariel,
                             een nieuwsgierige
                             zeemeerminprinses die verlangt naar een leven aan land.
                         </p>
-                        <a href="#">BEZOEK NU</a>
+                        <a href="https://www.disneyplus.com/nl-nl/home">BEZOEK NU</a>
                     </div>
                 </article>
                 <article>
-                    <img src="images/elemental.jpg" alt="">
+                    <img src="images/elemental.jpg" alt="Elemental">
                     <div class="insideArticle">
                         <h3>
                             Elemental
@@ -73,13 +73,13 @@
                             ★★★★
                         </p>
                         <p>
-                            “Elemental” speelt zich af in Elementenstad, waar vuur-, water-, land- en luchtbewoners
+                            <cite>“Elemental”</cite> speelt zich af in Elementenstad, waar vuur-, water-, land- en luchtbewoners
                             samenleven. Als Ember, een
                             pittige en pientere jonge vrouw, vriendschap sluit met Wade, een geestige en
                             gemoedelijke
                             gast
                         </p>
-                        <a href="#">BEZOEK NU</a>
+                        <a href="https://www.disneyplus.com/nl-nl/home">BEZOEK NU</a>
                     </div>
                 </article>
                 <article>
@@ -92,12 +92,12 @@
                             ★★★
                         </p>
                         <p>
-                            “Haunted Mansion” gaat over een vrouw met haar zoon die een bont gezelschap van
+                            <cite>“Haunted Mansion”</cite> gaat over een vrouw met haar zoon die een bont gezelschap van
                             zogenaamde
                             spirituele experts inschakelen om
                             hun huis te ontdoen van bovennatuurlijke krakers.
                         </p>
-                        <a href="#">BEZOEK NU</a>
+                        <a href="https://www.disneyplus.com/nl-nl/home">BEZOEK NU</a>
                     </div>
                 </article>
             </div>
@@ -106,35 +106,35 @@
             <h4>
                 Form
             </h4>
-            <form action="index.html">
+            <form action="index.html" id="dinseyForm">
                 <section class="wholeForm">
                     <div class="topForm">
                         <div class="formRow">
                             <label for="firstname">Voornaam</label>
-                            <input type="text" name="firstname" id="firstname" placeholder="Voornaam">
+                            <input type="text" name="firstname" id="firstname" placeholder="Voornaam" required>
                         </div>
                         <div class="formRow">
                             <label for="lastname">Achternaam</label>
-                            <input type="text" name="lastname" id="lastname" placeholder="Achternaam">
+                            <input type="text" name="lastname" id="lastname" placeholder="Achternaam" required>
                         </div>
                     </div>
                     <div class="formRow">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Email">
+                        <input type="email" name="email" id="email" placeholder="Email" required>
                     </div>
                     <div class="topForm">
                         <div class="formRow">
                             <label for="place">Woonplaats</label>
-                            <input type="text" name="place" id="place" placeholder="Woonplaats">
+                            <input type="text" name="place" id="place" placeholder="Woonplaats" required>
                         </div>
                         <div class="formRow">
                             <label for="birthdate">Geboortedatum</label>
-                            <input type="date" name="birthdate" id="birthdate">
+                            <input type="date" name="birthdate" id="birthdate" required>
                         </div>
                     </div>
                     <div class="formRow">
                         <label for="onderwerp">Onderwerp</label>
-                        <select id="onderwerp" name="onderwerp">
+                        <select id="onderwerp" name="onderwerp" required>
                             <option value="" disabled selected>Kies onderwerp van het bericht... </option>
                             <option value="disney">Disney+</option>
                             <option value="disneyland">Disneyland Paris</option>
@@ -144,7 +144,7 @@
                     </div>
                     <div class="formRow">
                         <label for="question">Bericht</label>
-                        <input type="textarea" name="question" id="question">
+                        <textarea name="question" id="question" form="disneyForm"></textarea>
                     </div>
                     <div>
                         <label for="inschrijven">Inschrijven voor nieuwsbrief?</label>
@@ -160,7 +160,7 @@
                         </div>
                     </div>
                     <div class="check">
-                        <input type="checkbox" id="check" name="check" value="Check">
+                        <input type="checkbox" id="check" name="check" value="Check" required>
                         <label for="check">Ik ga akkoord met de algemene voorwaarden</label>
                     </div>
                     <button type="submit">Verstuur</button>
@@ -181,17 +181,24 @@
                     </p>
                 </div>
                 <div class="rightFooter">
-                    <p>
+                    <p><small>
                         Privacyverklaring
+                        </small>
                     </p>
                     <p>
+                        <small>
                         Algemene voorwaarden
+                        </small>
                     </p>
                     <p>
+                        <small>
                         Cookiebeleid
+                        </small>
                     </p>
                     <p>
+                        <small>
                         Contact
+                        </small>
                     </p>
                 </div>
             </div>
